@@ -3,16 +3,12 @@
     <head>
         @include('partials.head')
     </head>
-    <body class="min-h-screen bg-white antialiased dark:bg-linear-to-b dark:from-neutral-950 dark:to-neutral-900">
+    <body class="min-h-screen bg-white antialiased dark:bg-zinc-800">
         <div class="relative grid h-dvh flex-col items-center justify-center px-8 sm:px-0 lg:max-w-none lg:grid-cols-2 lg:px-0">
-            <div class="bg-muted relative hidden h-full flex-col p-10 text-white lg:flex dark:border-e dark:border-neutral-800">
-                <div class="absolute inset-0 bg-neutral-900"></div>
-                <a href="{{ route('home') }}" class="relative z-20 flex items-center text-lg font-medium" wire:navigate>
-                    <span class="flex h-20 w-64 items-center justify-center">
-                        <x-app-logo-icon class="fill-current" />
-                    </span>
-                    {{ config('app.name', 'Laravel') }}
-                </a>
+            <div class="bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900 relative hidden h-full flex-col p-10 text-white lg:flex">
+                <span class="relative z-20 flex h-full w-full items-center justify-center">
+                    <x-app-banner class="fill-current w-2xl" />
+                </span>
 
                 @php
                     [$message, $author] = str(Illuminate\Foundation\Inspiring::quotes()->random())->explode('-');
@@ -27,7 +23,7 @@
             </div>
             <div class="w-full lg:p-8">
                 <div class="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[350px]">
-                    <a href="{{ route('home') }}" class="z-20 flex flex-col items-center gap-2 font-medium lg:hidden" wire:navigate>
+                    <a href="{{ route('home') }}" class="flex flex-col items-center font-medium" wire:navigate>
                         <span class="flex h-20 w-64 items-center justify-center">
                             <x-app-logo-icon class="fill-current" />
                         </span>
