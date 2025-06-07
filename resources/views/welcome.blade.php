@@ -129,8 +129,7 @@
             <!-- Organisation Info -->
             <div
                 class="bg-gradient-to-r from-rose-300 via-red-400 to-orange-300 py-8 px-2 w-full flex flex-col items-center font-bold rounded-2xl">
-                <h1 class="mb-0 w-full text-center text-cyan-700 text-4xl md:text-5xl">विद्या संकल्प संस्थान कैरियर
-                    पथ</h1>
+                <h1 class="mb-0 w-full text-center text-cyan-700 text-4xl md:text-5xl"><span>विद्या संकल्प संस्थान </span><span class="md:hidden"><br></span><span>कैरियर पथ</span></h1>
                 <h1 class="py-2 text-white text-center text-2xl md:text-3xl">
                     सपने आप देखो, साकार हम करेंगे
                 </h1>
@@ -138,7 +137,7 @@
                     हमारा उदेश्य शिक्षा एवं संस्कार
                 </p>
                 <button
-                    class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                    class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-6 py-2 md:py-4 px-5 md:px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
                     Explore Classes
                 </button>
             </div>
