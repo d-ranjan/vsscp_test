@@ -7,9 +7,9 @@
 
 <body class="min-h-screen bg-white antialiased dark:bg-zinc-800">
     <div
-        class="flex flex-col items-center justify-center w-full transition-opacity opacity-100 duration-750 lg:grow starting:opacity-0">
+        class="flex flex-col items-center justify-center w-full lg:max-w-4xl transition-opacity opacity-100 duration-750 lg:grow starting:opacity-0">
         <header
-            class="w-full lg:max-w-4xl text-sm not-has-[nav]:hidden p-3 flex items-center justify-end">
+            class="w-full text-sm not-has-[nav]:hidden p-3 flex items-center justify-end">
             @if (Route::has('login'))
                 <nav class="flex items-center justify-end gap-4">
                     @guest
@@ -29,7 +29,7 @@
                 </nav>
             @endif
         </header>
-        <main class="max-w-[335px] w-full lg:max-w-4xl">
+        <main class="w-full">
             <!-- Carousel -->
             {{-- <div class="w-full mx-auto h-96 md:h-[32rem]">
                 <div id="default-carousel" class="relative w-full h-full" data-carousel="slide">
@@ -128,13 +128,13 @@
             </div> --}}
             <!-- Organisation Info -->
             <div
-                class="bg-gradient-to-r from-rose-300 via-red-400 to-orange-300 py-8 px-3 w-full flex flex-col items-center font-bold rounded-2xl">
-                <h1 class="mb-0 w-full text-center text-cyan-700 text-5xl md:text-5xl">विद्या संकल्प संस्थान कैरियर
+                class="bg-gradient-to-r from-rose-300 via-red-400 to-orange-300 py-8 px-2 w-full flex flex-col items-center font-bold rounded-2xl">
+                <h1 class="mb-0 w-full text-center text-cyan-700 text-3xl md:text-5xl">विद्या संकल्प संस्थान कैरियर
                     पथ</h1>
                 <h1 class="py-2 text-white text-center text-2xl md:text-3xl">
                     सपने आप देखो, साकार हम करेंगे
                 </h1>
-                <p class="text-md text-white text-center">
+                <p class="text-white text-center text-md md:text-xl">
                     हमारा उदेश्य शिक्षा एवं संस्कार
                 </p>
                 <button
