@@ -7,9 +7,9 @@
 
 <body class="min-h-screen bg-white antialiased dark:bg-zinc-800">
     <div
-        class="flex flex-col items-center justify-center w-full lg:max-w-4xl transition-opacity opacity-100 duration-750 lg:grow starting:opacity-0">
+        class="flex flex-col items-center justify-center w-full transition-opacity opacity-100 duration-750 lg:grow starting:opacity-0">
         <header
-            class="w-full text-sm not-has-[nav]:hidden p-3 flex items-center justify-end">
+            class="w-full lg:max-w-4xl text-sm not-has-[nav]:hidden p-3 flex items-center justify-end">
             @if (Route::has('login'))
                 <nav class="flex items-center justify-end gap-4">
                     @guest
@@ -29,7 +29,7 @@
                 </nav>
             @endif
         </header>
-        <main class="w-full">
+        <main class="w-full lg:max-w-4xl">
             <!-- Carousel -->
             {{-- <div class="w-full mx-auto h-96 md:h-[32rem]">
                 <div id="default-carousel" class="relative w-full h-full" data-carousel="slide">
